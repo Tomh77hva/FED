@@ -1,0 +1,45 @@
+:root {  
+    --wit:#ffffff;
+
+    --rood:#EA162D;
+    --groen: #18AB74;
+
+    --nav_ag: #212121;
+    --icon: #3C3C3C;
+
+    --tekst: #2E2F34;
+    --tekst_bold: #101622;
+    --tekst_tag: #1A1A1A;
+    --tekst_licht: #A1A1A1;
+
+}
+@font-face{
+    font-family: 'objective';
+    src: url('/images/1551078499wpdm_Obective/Objective_Woff2/Objective-Regular.woff2');
+    
+}
+body{
+    background-color: #F8F8FF;
+}
+h1{
+    color: var(--tekst_bold);
+    font-family: 'objective', sans-serif;
+}
+h2{
+    font-family: 'objective', sans-serif;
+    color:crimson;
+}
+p{
+    font-family: 'objective', sans-serif;
+    color: #18AB74;
+}
+nav section:nth-of-type(1) {
+    background-color: var(--nav_ag);
+}
+nav section:nth-of-type(2) {
+    background-color: var(--rood);
+}
+
+footer{
+    background-color: var(--nav_ag);
+}
