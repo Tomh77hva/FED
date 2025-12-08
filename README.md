@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw/Rood
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  surface plane
  
 </details>
 
@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 https://xxlnutrition.com/nl
   #### Screenshot(s) van de eerste pagina (small screen): 
   Hoofdpagina 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/main_full.png" width="375px" alt="De hoofdpagina van Xxl Nutrition">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Productpagina
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/detail_full.png" width="375px" alt="Een productpagina van Xxl Nutrition">
  
 </details>
 
