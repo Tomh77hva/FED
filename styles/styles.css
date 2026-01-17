@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 0;
+  margin-left: 0.6em;
 }
 
 img, picture, video, canvas, svg {
@@ -18,11 +18,14 @@ img, picture, video, canvas, svg {
 
   --nav_ag: #212121;
   --icon: #3c3c3c;
-
+  --grijs_heellicht: #f5f5f5;
+  --border_grijs: #E5E7EB;
+  --border_grijs_donker: #d1d5db;
   --tekst: #2e2f34;
   --tekst_bold: #101622;
   --tekst_tag: #1a1a1a;
   --tekst_licht: #a1a1a1;
+  --tekst_grijs: #666666;
 }
 
 @font-face {
@@ -34,7 +37,7 @@ img, picture, video, canvas, svg {
   src: url("/images/1551078499wpdm_Obective/Objective_Woff2/Objective-Medium.woff2");
 }
 @font-face {
-  font-family: "objective_bold" ;
+  font-family: "objective_bold";
   src: url("/images/1551078499wpdm_Obective/Objective_Woff2/Objective-Bold.woff2");
 }
 li{
@@ -42,18 +45,33 @@ li{
 }
 
 h1 {
-  color: var(--tekst_bold);
+  color: var(--wit);
   font-family: "objective_bold", sans-serif;
+  font-size: 1.3em;
 }
 
 h2 {
   font-family: "objective_med", sans-serif;
-  color: crimson;
+  color: var(--tekst_bold);
+  font-size: 1.5em;
+  max-width: 80%;
+  text-align: center;
+  display: flex;
+  justify-self: center;
 }
-
+h3 {
+  font-family: "objective_bold", sans-serif;
+  color: var(--wit);
+  font-size: 1.1em;
+}
+h4 {
+  font-family: "objective_bold", sans-serif;
+  color: var(--tekst_bold);
+  font-size: 1em;
+}
 p {
   font-family: "objective_reg", sans-serif;
-  color: #18ab74;
+  font-size: 0.8em;
 }
 ul{
   padding: 0;
@@ -62,60 +80,614 @@ li{
   margin: 0;
   padding: 0;
 }
-
-
+a{
+    font-family: "objective_reg", sans-serif;
+    text-decoration: none;
+    color: var(--tekst_bold);
+}
+button{
+    border: none;
+    background: none;
+}
 /*navigatie*/
-nav ul:nth-of-type(2) {
-  position: sticky;
+nav{
+  width: calc(100% - 1.2em);
+  background-color: var(--nav_ag);  
+  position: fixed;
   top: 0em;
-  background-color: var(--nav_ag);
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  margin-left: 0.6em;
-  margin-right: 0.6em;
-  margin-top: 0;
   border-radius: 0.4em;
+}
+nav ul{
+  width: 100%;
+  padding-top: 0.5em;
+  margin-top: 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
 }
-nav ul:nth-of-type(2) li{
+
+nav ul li{
   width: 1.5em;
   height: 1.5em;
-
-}
-nav ul:nth-of-type(2) li:nth-of-type(2){
-  width: 1.2em;
-  height: 1.2em;
-
 }
 
-nav ul:nth-of-type(2) li:nth-of-type(3){
+
+nav ul li:nth-of-type(3){
   width: 4.5em;
   height: 2.5em;
   padding-top: 0.05em;
-  padding-bottom: 2.7em;
+}
+nav ul li:nth-of-type(2){
+  width: 1em;
+  height: 1em;
+}
+nav ul li:nth-of-type(4){
+  width: 1.4em;
+  height: 1em;
+}
+nav ul li:nth-of-type(5){
+  width: 1.4em;
+  height: 1em;
 }
 
-/*1ste navigatie*/
 
-
-nav ul:nth-of-type(1){
+/*De grootste in sportvoeding & supplementen*/
+main section:nth-of-type(1){
+  background-image: url("../../images/content/MainHeader-Mobile-1.jpg");
+  background-size: cover;
+  background-position: center 100%;
+  margin-top: 4.5em;
+  margin-bottom: 2em;
+  border-radius: 0.4em;
+  height: 24em;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.5em;
-  margin: 0;
+  text-align: center;
 }
-nav ul:nth-of-type(1) img{
-  width: 1.2em;
-  height: 1.2em;
-}
-nav ul:nth-of-type(1) p{
+
+main section:nth-of-type(1) p:nth-of-type(1){
+  color: var(--wit);
+  font-family: "objective_reg", sans-serif;
+  order: -1;
   font-size: 0.8em;
 }
+
+main section:nth-of-type(1) p:nth-of-type(2){
+  color: var(--wit);
+  margin-top: 0em;
+}
+
+main section:nth-of-type(1) a:nth-of-type(1){
+  color: var(--wit);
+  background-color: var(--rood);
+  padding: 1em 1.8em;
+  border-radius: 1.5em;
+  margin-top: 0em;
+  margin-bottom: 0.3em;
+  font-family: "objective_med", sans-serif;
+  font-size: 0.8em;
+}
+
+main section:nth-of-type(1) a:nth-of-type(2){
+  color: var(--wit);
+  margin-top: 0.5em;
+  font-size: 0.9em;
+}
+
+/*categorieën*/
+
+main > ul{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 0.5em;
+  margin-top: -1.5em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+  gap: 0.3em 0.5em;
+}
+main > ul li{
+  display: flex;
+  background-color: var(--grijs_heellicht);
+  border-radius: 0.4em;
+}
+main > ul a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main > ul img{
+  height: 4em;
+}
+main > ul p{
+  font-family: "objective_bold";
+  font-size: 0.9em;
+  color: var(--tekst_bold);
+}
+
+/*instant oats*/
+main section:nth-of-type(2){
+  background-image: url("../../images/content/instant-protein-oats-1.jpg");
+  background-size: cover;
+  background-position: center 100%;
+  border-radius: 0.4em;
+  height: 9.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  margin-top: 1.4em;
+  padding-left: 1.3em;
+  padding-top:0.3em;
+}
+main section:nth-of-type(2) p{
+
+  color: var(--wit);
+  margin-top: -1em;
+  max-width: 15em;
+}
+main section:nth-of-type(2) a{
+  background-color: var(--wit);
+  padding: 1em 1.8em;
+  border-radius: 1.5em;
+  margin-top: 0em;
+  margin-bottom: 0.3em;
+  font-family: "objective_med", sans-serif;
+  font-size: 0.8em;
+}
+
+/*product*/
+
+main section:nth-of-type(3) > ul{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 100%;
+  gap: 11em 0.4em;
+  margin-bottom: 12em; 
+}
+main section:nth-of-type(3) h2{
+  margin-top: 2em;
+  text-align: center;
+  display: flex;
+  justify-self: center;
+}
+
+.product{
+  background-image: url("../../images/content/bier.webp");
+  background-size: cover;
+  background-position: center 100%;
+  width: 96%;
+  height: 15em;
+  background-color: var(--grijs_heellicht);
+  border-radius: 0.4em;
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: 20% 60% 20%;
+}
+
+.product > img:nth-of-type(1){
+  width: 80%;
+  margin: 0.6em;
+  grid-column: span 3;
+}
+.product button{
+  grid-column: 3;
+  grid-row: 3;
+  margin-top: -0.6em;
+  height: 3.2em;
+  width: 3.2em;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--groen);
+  padding: 0.9em;
+}
+
+.product ul li:nth-of-type(1){
+  margin-top: 13em;
+  display: flex;
+  height: 1em;
+  gap: 0.3em;
+}
+.product ul li:nth-of-type(1) p{
+  font-size: 0.7em;
+  margin: 0.3em;
+  white-space: nowrap; /*dit zorgt ervoor dat ie naast elkaar blijft staan*/
+  margin-top: 0.4em;
+  color: var(--tekst_grijs);
+}
+.product article ul{
+  white-space: nowrap;
+}
+.product h4{
+  margin-top: 1em;
+}
+
+.product ul li:nth-of-type(3){
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: -1.2em;
+  font-size: 0.95em;
+}
+.product ul li:nth-of-type(3) img{
+  height: 1em;
+  margin-left: 0.3em;
+}
+.product ul li:nth-of-type(4){
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: -1em;
+  font-size: 0.95em;
+}
+.product ul li:nth-of-type(4) img{
+  height: 1em;
+  margin-left: 0.3em;
+}
+.product ul li:nth-of-type(5) p{
+  font-family: "objective_bold", sans-serif;
+    margin-top: 0.3em;
+    margin-left: 0.2em;
+}
+
+.from{
+  font-size: 0.95em;
+  color: var(--tekst_licht);
+}
+.old{
+  font-size: 1.2em;
+  text-decoration: line-through;
+  margin-left: 0.2em;
+}
+.old_small{
+  font-size: 0.95em;
+  text-decoration: line-through;
+  margin-left: -0.5em;
+}
+.new{
+  font-size: 1.2em;
+  color: var(--rood);
+  margin-left: 0.2em;
+}
+.new_small{
+  font-size: 0.95em;
+  color: var(--rood);
+  margin-left: -0.5em;
+}
+
+main section:nth-of-type(3) > a{
+  font-family: "objective_bold", sans-serif;
+  color: var(--wit);
+  background-color: var(--rood);
+  font-size: 0.85em;
+  padding: 1.6em 2.2em;
+  border-radius: 2.2em;
+  text-align: center;
+  display: flex;
+  justify-self: center;
+}
+/*Ontdek de supplementen wijzer*/
+main > img{
+  margin-top: 5em;
+  margin-bottom: 1em;
+}
+
+/*Ontdek de beste producten voor jouw sportdoel*/
+
+main section:nth-of-type(4) ul{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 0.4em 0.4em;
+}
+
+main section:nth-of-type(4) li{
+  max-width: 96%;
+}
+
+/*nieuwe producten*/
+main section:nth-of-type(5) > ul{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 100%;
+  gap: 11em 0.4em;
+  margin-bottom: 12em;
+}
+main section:nth-of-type(5) h2{
+  margin-top: 2em;
+}
+
+main section:nth-of-type(5) > a{
+  font-family: "objective_bold", sans-serif;
+  color: var(--wit);
+  background-color: var(--rood);
+  font-size: 0.85em;
+  padding: 1.6em 2.2em;
+  border-radius: 2.2em;
+  text-align: center;
+  display: flex;
+  justify-self: center;
+}
+
+/*#WEAREXXL*/
+main section:nth-of-type(6) h2{
+  margin-top: 2em;
+  font-size: 1.8em;
+}
+main section:nth-of-type(6) p{
+  margin-top: -1em;
+  font-size: 0.9em;
+  max-width: 85%;
+  text-align: center;
+  display: flex;
+  justify-self: center;
+}
+main section:nth-of-type(6) > ul{
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 0.6em 0em;
+  max-width: 100%;
+  margin-right: 0.5em;
+}
+
+main section:nth-of-type(6) img{
+  border-radius: 0.8em;
+  width: 12em;
+  height: 12em;
+  object-fit: cover;
+}
+main section:nth-of-type(6) video{
+  border-radius: 0.8em;
+  width: 12em;
+  height: 12em;
+  object-fit: cover;
+}
+
+main section:nth-of-type(6) > a{
+  font-family: "objective_bold", sans-serif;
+  color: var(--wit);
+  background-color: var(--rood);
+  font-size: 0.85em;
+  padding: 1.6em 2.2em;
+  border-radius: 2.2em;
+  margin-top: 2.5em;
+  text-align: center;
+  display: flex;
+  justify-self: center;
+}
+
+/*Online sportvoeding & supplementen winkel + info*/
+main section:nth-of-type(7) h2{
+  margin-top: 3em;
+  max-width: 100%;
+  font-size: 1.8em;
+}
+main section:nth-of-type(7) p{
+  max-width: 93%;
+  text-align: center;
+  line-height: 1.8em;
+  font-size: 0.88em;
+}
+main section:nth-of-type(7)  a{
+  text-decoration: underline;
+  font-family: "objective_bold", sans-serif;
+  color: var(--tekst_bold);
+}
+
+main section:nth-of-type(7) > ul > li{
+  border: 1.9px solid var(--border_grijs);
+  border-radius: 0.5em;
+  margin-top: 1.5em;
+}
+
+
+main section:nth-of-type(7) div{
+  border: 1px solid var(--border_grijs);
+  border-radius: 3em;
+  padding: 0.4em;
+  padding-left: 0.56em;
+  padding-right: 0.56em;
+  width: fit-content;
+}
+main section:nth-of-type(7) img{
+  height: 1.6em;
+}
+
+main section:nth-of-type(7) h3{
+  color: var(--tekst_bold);
+  margin-left: 1.6em;
+  margin-top: -0.2em;
+  font-size: 0.9em;
+}
+main section:nth-of-type(7) > ul > li > ul{
+  display: flex;
+  flex-direction: column;
+}
+main section:nth-of-type(7) > ul > li > ul > li:nth-of-type(2){
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin: 1.5em;
+  order: -1;
+  font-size: 0.85em;
+}
+
+main section:nth-of-type(7) > ul > li > ul > li:nth-of-type(3) p{
+  text-align: left;
+  margin-left: 1.5em;
+  margin-bottom: 3em;
+  max-width: 85.8%;
+}
+
+/*kunnen we je ergens mee helpen?*/
+main section:nth-of-type(8){
+  background-color: var(--grijs_heellicht);
+  border-radius: 0.6em;
+  margin-bottom: 4em;
+  padding-bottom: 2em;
+  position: absolute;
+  margin-right: 0.7em;
+}
+.bolder{
+    font-family: "objective_bold", sans-serif;
+    color: var(--tekst_bold);
+    font-size: 1em;
+}
+
+main section:nth-of-type(8) h2{
+  padding-top: 1.5em;
+  margin-left: -1em;
+  font-size: 1.5em;
+  text-align: left;
+  line-height: 1.3em;
+}
+main section:nth-of-type(8) > p{
+  font-size: 1em;
+  margin-left: 1.5em;
+  max-width: 85%;
+  line-height: 1.5em;
+}
+
+
+main section:nth-of-type(8) img{
+  height: 1.5em;
+}
+main section:nth-of-type(8) img:nth-of-type(2){
+  order: 2;
+  height: 0.8em;
+}
+
+main section:nth-of-type(8) ul{
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin-left: 1.5em;
+}
+main section:nth-of-type(8) li a{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+main section:nth-of-type(8) p:nth-of-type(1){
+  font-family: "objective_bold", sans-serif;
+  color: var(--tekst_bold);
+  font-size: 0.85em;
+}
+
+main section:nth-of-type(8) li:nth-of-type(2){
+  border-top: 1px solid var(--border_grijs_donker);
+  border-bottom: 1px solid var(--border_grijs_donker);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+
 /*footer*/
 footer {
   background-color: var(--nav_ag);
+
+  width: 104%;
+  margin-left: -0.6em;
+  margin-top: 14em;
+}
+
+footer section{
+  padding-top: 15em;
+}
+footer h4{
+  color: var(--wit);
+  font-size: 0.8em;
+  font-family: "objective_reg", sans-serif;
+  text-align: center;
+  width: 88%;
+  margin-left: 1.5em;
+  line-height: 1.5em;
+}
+.bolder_wit{
+  font-family: "objective_bold", sans-serif;
+  color: var(--wit);
+  font-size: 1.15em;
+  padding: 0em;
+  margin: 0em;
+}
+input{
+  font-family: "objective_reg", sans-serif;
+  font-size: 0.85em;
+  width: 95%;
+  padding: 1.8em;
+  border-radius: 20em;
+  border: none;
+  background-color: var(--wit);
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+}
+footer section > a{
+  background-color: var(--rood);
+  color: var(--wit);
+  font-family: "objective_bold", sans-serif;
+  font-size: 0.85em;
+  width: 95%;
+  padding: 1.8em;
+  border-radius: 20em;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  margin-top: 1em;
+}
+footer > p{
+  color: var(--wit);
+  font-size: 0.85em;
+  text-align: center;
+  justify-self: center;
+
+  margin-top: 2em;
+  margin-bottom: 2em;
+  max-width: 80%;
+}
+footer ul:nth-of-type(2){
+  display: flex;
+  justify-content: center;
+  gap: 0.8em;
+  margin-bottom: 2em;
+}
+footer > img{
+  height: 2.5em;
+    display: flex;
+    justify-self: center;
+}
+footer ul:nth-of-type(3) img{
+  height: 1.2em;
+}
+footer ul:nth-of-type(3){
+  display: flex;
+  justify-content: center;
+  gap: 0.8em;
+  margin-bottom: 2em;
+}
+footer ul:nth-of-type(3) li{
+  border-radius: 1000em;
+  padding-top: 0.5em;
+  padding-bottom: 0.3em;
+  padding-left: 0.55em;
+  padding-right: 0.55em;
+  background-color: var(--icon);
+  width: fit-content;
+}
+footer ul:nth-of-type(4){
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+footer ul:nth-of-type(4) li img{
+  height: 2.5em;
+  width: fit-content;
 }

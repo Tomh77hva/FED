@@ -1,0 +1,97 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0.6em;
+}
+
+img, picture, video, canvas, svg {
+  max-width: 100%;
+}
+
+:root {
+  --wit: #ffffff;
+
+  --rood: #ea162d;
+  --groen: #18ab74;
+
+  --nav_ag: #212121;
+  --icon: #3c3c3c;
+
+  --tekst: #2e2f34;
+  --tekst_bold: #101622;
+  --tekst_tag: #1a1a1a;
+  --tekst_licht: #a1a1a1;
+}
+
+@font-face {
+  font-family: "objective_reg";
+  src: url("/images/1551078499wpdm_Obective/Objective_Woff2/Objective-Regular.woff2");
+}
+@font-face {
+  font-family: "objective_med";
+  src: url("/images/1551078499wpdm_Obective/Objective_Woff2/Objective-Medium.woff2");
+}
+@font-face {
+  font-family: "objective_bold" ;
+  src: url("/images/1551078499wpdm_Obective/Objective_Woff2/Objective-Bold.woff2");
+}
+li{
+  list-style-type: none;
+}
+
+h1 {
+  color: var(--wit);
+  font-family: "objective_bold", sans-serif;
+  font-size: 1.3em;
+}
+h2 {
+  font-family: "objective_med", sans-serif;
+  color: crimson;
+}
+
+p {
+  font-family: "objective_reg", sans-serif;
+  color: #18ab74;
+}
+ul{
+  padding: 0;
+}
+li{
+  margin: 0;
+  padding: 0;
+}
+a{
+    font-family: "objective_reg", sans-serif;
+}
+
+/*navigatie*/
+nav{
+  width: calc(100% - 1.2em);
+  background-color: var(--nav_ag);  
+  position: fixed;
+  top: 0em;
+  border-radius: 0.4em;
+}
+nav ul{
+  width: 100%;
+  padding-top: 0.5em;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav ul li{
+  width: 1.5em;
+  height: 1.5em;
+}
+
+
+nav ul li:nth-of-type(3){
+  width: 4.5em;
+  height: 2.5em;
+  padding-top: 0.05em;
+
+}
