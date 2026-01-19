@@ -654,7 +654,16 @@ details a {
 details[open] {
   background-color: var(--rood);
 }
-
+summary {
+  display: flex;
+  justify-content: space-between;
+}
+summary::marker {
+  content: none;
+}
+summary svg {
+  fill: var(--wit);
+}
 
 footer section{
   padding-top: 15em;
