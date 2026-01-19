@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>xxlnutriton</title>
-    <link rel="stylesheet" href="/styles/det_style.css">
+    <link rel="stylesheet" href="./styles/det_style.css">
 </head>
 <body>
     <header>
@@ -12,7 +12,7 @@
                 <ul>
                     <li><a href="#"><img src="./images/content/menu.png" alt="hamburger_menu"></a></li>
                     <li><a href="#"><img src="./images/content/search.png" alt="zoeken_icoon"></a></li>
-                    <li><a href="/index.html"><img src="./images/content/logo.93544189.svg" alt="xxlnutrition_logo"></a></li>
+                    <li><a href="./index.html"><img src="./images/content/logo.93544189.svg" alt="xxlnutrition_logo"></a></li>
                     <li><a href="#"><img src="./images/content/people.png" alt="account_icoon"></a></li>
                     <li><a href="#"><img src="./images/content/cart.png" alt="winkelwagen_icoon"></a></li>
                 </ul>
@@ -165,33 +165,59 @@
 
 <footer>
     <section>
-        <h4>Ontvang exclusieve kortingen en krijg eerder toegang tot promoties door je in te schrijven voor onze mailinglijst:</h4>
-        <a href="#">Jouw e-mailadres...*</a>
+        <h4>Ontvang <span class="bolder_wit">exclusieve kortingen</span> en krijg eerder toegang tot <span class="bolder_wit">promoties</span> door je in te schrijven voor onze mailinglijst:</h4>
+        <form>
+            <label for="email_footer"><input type="email" id="email_footer" name="email_footer" placeholder="Jouw e-mailadres...">
+        </label>
+        </form>
         <a href="#">Schrijf mij in</a>
     </section>
     <ul>
         <li>
-            <p>Klantenservice</p>
-            <button>
-                <img src="./images/content/pijl_omlaag.svg" alt="pijlomlaag">
-            </button>
+            <details>
+                <summary>Klantenservice <img src="./images/content/pijl_omlaag.svg" alt="pijl_omlaag"></summary>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Betaalmogelijkheden</a></li>
+                    <li><a href="#">Verzending</a></li>
+                    <li><a href="#">Retourneren</a></li>
+                </ul>
+            </details>
         </li>
         <li>
-            <p>Handige links</p>
-            <button>
-                <img src="./images/content/pijl_omlaag.svg" alt="pijlomlaag">
-            </button>
+            <details>
+                <summary>Handige links <img src="./images/content/pijl_omlaag.svg" alt="pijl_omlaag"></summary>
+                <ul>
+                    <li><a href="#">Loyaliteitssysteem</a></li>
+                    <li><a href="#">Caloriebehoefte berekenen</a></li>
+                    <li><a href="#">Cadeaubonnen</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Vacatures</a></li>
+                    <li><a href="#">Affiliate marketing</a></li>
+                    <li><a href="#">Statiegeld</a></li>
+                    <li><a href="#">Goede doelen</a></li>
+                    <li><a href="#">Verkooppunten</a></li>
+                    <li><a href="#">Algemene voorwaarden</a></li>
+                    <li><a href="#">Privacy en cookies</a></li>
+                    <li><a href="#">Privacycode voor sollicitanten</a></li>
+                </ul>
+            </details>
         </li>
         <li>
-            <p>Zakelijk</p>
-            <button>
-                <img src="./images/content/pijl_omlaag.svg" alt="pijlomlaag">
-            </button>
+            <details>
+            <summary>Zakelijk <img src="./images/content/pijl_omlaag.svg" alt="pijl_omlaag"></summary>
+            <ul>
+                <li><a href="#">Zakelijke voorwaarden</a></li>
+                <li><a href="#">Zakelijk account aanvragen</a></li>
+                <li><a href="#">Inloggen zakelijke website</a></li>
+            </ul>
+            </details>
         </li>
     </ul>
     <p>Vuurijzer 18, 5753SV Deurne (Nederland)</p>
+    <p>Download de XXL Nutrition app voor <span class="bolder_wit">exclusieve</span> deals:</p>
     <ul>
-        <li>Download de XXL Nutrition app voor exclusieve deals:</li>
         <li><img src="./images/content/app-store.ad60580d.svg" alt="app_store_icoon"></li>
         <li><img src="./images/content/google-store.777950a5.svg" alt="google_play_icoon"></li>
     </ul>

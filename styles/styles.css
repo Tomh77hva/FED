@@ -599,7 +599,62 @@ footer {
   width: 104%;
   margin-left: -0.6em;
   margin-top: 14em;
+  padding-bottom: 2em;
 }
+
+
+details {
+  font-family: "objective_bold", sans-serif;
+  color: var(--wit);
+  font-size: 0.85em;
+
+  border: 1px solid var(--border_grijs_donker);
+  border-radius: 0.6em;
+  padding: 1.5em;
+  margin-top: 1em;
+  margin-left: 0.6em;
+  margin-right: 0.6em;
+
+  background-color: transparent;
+}
+
+
+summary {
+  list-style-position: outside;
+}
+
+/* ik heb de video van kevin powell over details gekeken en proberen te volgen, maar het element block-size kreeg ik niet te werken in mijn code, dus met chatgpt heb ik een manier gevonden om de animatie erin te krijgen zonder block-size te gebruiken. Maar ik snap wel wat hij doet door alles in de details behalve de summary aan te spreken*/
+details > *:not(summary) {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 2s ease, opacity 1s ease;
+  opacity: 0;
+}
+
+
+details[open] > *:not(summary) { 
+  max-height: 1000em; 
+  opacity: 1;
+}
+
+
+details li {
+  font-size: 1em;
+  margin-top: 1em;
+  padding-block: 1em;
+}
+
+
+details a {
+  font-family: "objective_reg", sans-serif;
+  color: var(--wit);
+}
+
+
+details[open] {
+  background-color: var(--rood);
+}
+
 
 footer section{
   padding-top: 15em;
@@ -686,8 +741,15 @@ footer ul:nth-of-type(3) li{
 footer ul:nth-of-type(4){
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
+    border-top: 1px solid var(--border_grijs_donker);
+  border-bottom: 1px solid var(--border_grijs_donker);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 footer ul:nth-of-type(4) li img{
   height: 2.5em;
   width: fit-content;
 }
+
