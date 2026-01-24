@@ -618,32 +618,37 @@ details {
   background-color: transparent;
 }
 
-
-summary {
-  list-style-position: outside;
-}
-
 /* ik heb de video van kevin powell over details gekeken en proberen te volgen, maar het element block-size kreeg ik niet te werken in mijn code, dus met chatgpt heb ik een manier gevonden om de animatie erin te krijgen zonder block-size te gebruiken. Maar ik snap wel wat hij doet door alles in de details behalve de summary aan te spreken*/
 details > *:not(summary) {
   overflow: hidden;
   max-height: 0;
-  transition: max-height 2s ease, opacity 1s ease;
+
   opacity: 0;
 }
-
-
 details[open] > *:not(summary) { 
   max-height: 1000em; 
   opacity: 1;
+  transition: all 0.5s ease-in;
+
+}
+details[open] img { 
+  transition: all 0.2s ease-in;
+  transform: rotate(180deg);
+
 }
 
-
+details ul{
+  margin-top: 1em;
+}
 details li {
   font-size: 1em;
   margin-top: 1em;
-  padding-block: 1em;
-}
 
+}
+details img {
+  height: 1.7em;
+
+}
 
 details a {
   font-family: "objective_reg", sans-serif;
@@ -651,19 +656,17 @@ details a {
 }
 
 
-details[open] {
-  background-color: var(--rood);
-}
+
 summary {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+    list-style-position: outside;
 }
 summary::marker {
   content: none;
 }
-summary svg {
-  fill: var(--wit);
-}
+
 
 footer section{
   padding-top: 15em;
