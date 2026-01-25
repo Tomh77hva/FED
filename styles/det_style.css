@@ -45,19 +45,22 @@ li{
 }
 
 h1 {
-  color: var(--wit);
+  color: var(--tekst_bold);
   font-family: "objective_bold", sans-serif;
-  font-size: 1.3em;
+  font-size: 1.875em;
+  order: 3;
+  margin-bottom: 0em;
+  text-align: center;
+  display: flex;
+  justify-self: center;
 }
 
 h2 {
   font-family: "objective_med", sans-serif;
   color: var(--tekst_bold);
-  font-size: 1.5em;
+  font-size: 0.9em;
   max-width: 80%;
-  text-align: center;
-  display: flex;
-  justify-self: center;
+  margin: 0;
 }
 h3 {
   font-family: "objective_bold", sans-serif;
@@ -129,9 +132,212 @@ nav ul li:nth-of-type(5){
   width: 1.4em;
   height: 1em;
 }
+
+/*product caroussel*/
+main section:nth-of-type(1){
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+main section:nth-of-type(1) ul:nth-of-type(1){
+  display: flex;
+  overflow: auto;
+  scroll-snap-type:x mandatory; /*dit zorgt ervoor dat je alleen maar horizontaal kan scrollen en dat de afbeelding "snapt" op de juiste plek zodat je de hele afbeelding ziet*/
+  scroll-behavior:smooth; /*dit is smooth zodat het snappen van de regel hierboven soepel verloopt*/
+  overscroll-behavior-x:contain; /*dit zorgt ervoor dat je niet "over" de caroussel heen kan scrollen en de hele pagina mee trekt en zonder bounce back*/
+  gap: 1em;
+
+  scrollbar-width:thin;
+  /*scroll-marker-group: after; <---------------------------------------------maak hier later maar zorgen om*/
+  scrollbar-color:#f09 transparent;
+  order: 1;
+}
+
+main section:nth-of-type(1) ul:nth-of-type(1) li{
+  flex-basis:98%;
+  flex-shrink:0;
+  scroll-snap-align:center;
+  
+}
+
+main section:nth-of-type(1) ul:nth-of-type(1) li img{
+  border-radius: 0.4em;
+}
+/*de officiele website gebruikt hier individuele spans per bolletje*/
+main section:nth-of-type(1) ul:nth-of-type(2){
+  display: flex;
+  justify-content:space-between;
+  gap: 1em;
+  margin-top: 1em;
+}
+main section:nth-of-type(1) ul:nth-of-type(2) button{
+  width:3em;
+  aspect-ratio:1;
+  margin:1em 0 0;
+  padding:0;
+
+  background-color:var(--border_grijs_donker);
+  border:none;
+  border-radius:50%;
+
+
+  font-size:1em;
+}
+
+
+main section:nth-of-type(1) p{
+  order: 5;
+}
+
+
+
+
+main section:nth-of-type(1) ul:nth-of-type(2){
+  order: 2;
+}
+main section:nth-of-type(1) ul:nth-of-type(3){
+  order: 4;
+  display: flex;
+  align-items: center;
+  align-self: self-start;
+  gap: 0.5em;
+  margin: 0em;
+}
+main section:nth-of-type(1) ul:nth-of-type(3) p{
+  color: var(--tekst_grijs);
+  text-decoration: underline;
+}
+main section:nth-of-type(1) ul:nth-of-type(3) img{
+  height: 1em;
+  margin: 0em;
+}
+
+main section:nth-of-type(1) > p{
+  font-size: 0.85em;
+  line-height: 2em;
+  font-family: "objective_reg";
+}
+
+main section:nth-of-type(2) ul:nth-of-type(1) {
+  display: flex;
+  gap: 0.6em;
+  margin-top: 0.5em;
+}
+
+main section:nth-of-type(2) ul:nth-of-type(1) li{
+  border: 1px solid var(--tekst_tag);
+  border-radius: 0.4em;
+  padding: 0.4em 0.2em;
+  text-align: center;
+}
+
+main section:nth-of-type(2) ul:nth-of-type(1) li:active{
+  border: var(--groen);
+  background-color: var(--groen);
+  color: var(--wit);
+}
+
+#smaak_keuze{
+  font-size: 1em;
+  font-family: "objective_reg", sans-serif;
+  border: 1px solid var(--tekst_tag);
+  border-radius: 0.6em;
+  padding: 1.5em 1em;
+  padding-right: 11em;
+  margin-top: 0.5em;
+  max-width: 100%;
+}
+
+main section:nth-of-type(2) ul:nth-of-type(2){
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+main section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(1){
+  color: var(--tekst_licht);
+}
+main section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(2) p{
+  font-family: "objective_bold";
+  color: var(--tekst_bold);
+  font-size: 1.2em;
+
+}
+
+main > ul:nth-of-type(1){
+  display : flex;
+  flex-direction: column;
+  border: 1px solid var(--border_grijs);
+  border-radius: 0.6em;
+  padding: 1.5em 1em;
+}
+main > ul:nth-of-type(1) li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1em;
+  font-family: "objective_reg";
+  font-size: 0.85em;
+}
+main > ul:nth-of-type(1) img{
+  height: 1em;
+}
+.bold_zwart{
+    font-family: "objective_bold", sans-serif;
+    color: var(--tekst_bold);
+}
+
+
+main ul:nth-of-type(2){
+    display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+main > article ul{
+  display: flex;
+  flex-direction: column;
+}
+main > article ul img{
+  height: 1.5em;
+}
+main > article li{
+  display: flex;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*kunnen we je ergens mee helpen?*/
-
-
 /*nog niet goed gelinked*/
 main section:nth-of-type(8){
   background-color: var(--grijs_heellicht);
