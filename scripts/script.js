@@ -1,7 +1,24 @@
 // JavaScript Document
 console.log("hi");
 
+const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const overlay = document.getElementById('overlay');
 
+        function toggleMenu() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+
+        hamburger.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking on a nav link
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
 // const slidesContainer = document.getElementById("slides-container");
 // const slide = document.querySelector(".slide");
 // const prevButton = document.getElementById("slide-arrow-prev");
@@ -68,3 +85,4 @@ document.getElementById('prevbutton').addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + totalImages) % totalImages;
     updateCarousel();
 });
+

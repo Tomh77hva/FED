@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>xxlnutriton</title>
     <link rel="stylesheet" href="./styles/det_style.css">
+    <link rel="stylesheet" href="./styles/algemeenstyles.css">
 </head>
 <body>
     <header>
@@ -20,7 +21,7 @@
     </header>
 <main>
    <section>
-    <div class="carouselcontainer">
+    <!-- <div class="carouselcontainer"> -->
     <h1>Protein Lemonade</h1>
     <ul class="carousel" id="carouselImages">
         <li class="carouselimg"><img src="./images/content/protein_limo.png" alt="protein_limonade_flesje"></li>
@@ -30,19 +31,19 @@
         <li class="carouselimg"><img src="./images/content/ontdek_ze_nu_limo.png" alt="ontdek_heerlijke_smaken"></li>
         <li class="carouselimg"><img src="./images/content/vrouw_limo_drink.png" alt="vrouw_drinkt_protein_drink"></li>
     </ul>
-<ul class="carousel-indicators">
+<!-- <ul class="carousel-indicators">
   <li class="indicator active"></li>
   <li class="indicator"></li>
   <li class="indicator"></li>
   <li class="indicator"></li>
   <li class="indicator"></li>
   <li class="indicator"></li>
-</ul>  
-    <ul class="carouselbutton">
+</ul>   -->
+    <!-- <ul class="carouselbutton">
         <li><button id="prevbutton"><</button></li>
         <li><button id="nextbutton">></button></li>
-    </ul>
-    </div>
+    </ul> -->
+    <!-- </div> -->
     <ul>
         <li>
                 <img src="./images/content/ster.png" alt="volle_ster">
@@ -76,9 +77,10 @@
             <li><p>Vanaf</p></li>
             <li><p>10,99</p></li>
         </ul>
-        <p>1,47 per flesje</p>
-        <button>+ - button, zoek ff online hoe de fuck ik dit kan doen</button>
-        <button>in winkelwagen</button>
+        <div>
+            <p>1,47 per flesje</p>
+            <button>In winkelwagen</button>
+        </div>
    </section>
    <ul>
     <li><img src="./images/content/check_groen.png" alt="groen_vinkje"><span class="bold_zwart">Gratis</span> verzending vanaf <span class="bold_zwart">50,-</span></li>
@@ -98,30 +100,16 @@
         <li><img src="./images/content/logos/Paypal-logo@2x.dda9b02d.png" alt="paypal"></li>
     </ul>
     <article>
-    <h4>In het kort:</h4>
+    <h3>In het kort:</h3>
     <ul>
-        <li><p><img src="./images/content/check_nocircle.png" alt="vinkje">5 verschillende smaken</p></li>
-        <li><p><img src="./images/content/check_nocircle.png" alt="vinkje">Suiker-, vet- en lactosevrij</p></li>
-        <li><p><img src="./images/content/check_nocircle.png" alt="vinkje">Maar 40 kcal per blikje</p></li>
-        <li><p><img src="./images/content/check_nocircle.png" alt="vinkje">Zonder conserveermiddelen</p></li>
-        <li><p><img src="./images/content/check_nocircle.png" alt="vinkje">Licht bruisend</p></li>
-        <li><p><img src="./images/content/check_nocircle.png" alt="vinkje">Kant-en-klaar, dus ideaal voor onderweg</p></li>
+        <li><img src="./images/content/check_nocircle.png" alt="vinkje"><p>5 verschillende smaken</p></li>
+        <li><img src="./images/content/check_nocircle.png" alt="vinkje"><p>Suiker-, vet- en lactosevrij</p></li>
+        <li><img src="./images/content/check_nocircle.png" alt="vinkje"><p>Maar 40 kcal per blikje</p></li>
+        <li><img src="./images/content/check_nocircle.png" alt="vinkje"><p>Zonder conserveermiddelen</p></li>
+        <li><img src="./images/content/check_nocircle.png" alt="vinkje"><p>Licht bruisend</p></li>
+        <li><img src="./images/content/check_nocircle.png" alt="vinkje"><p>Kant-en-klaar, dus ideaal voor onderweg</p></li>
     </ul>
     </article>
-    <section>
-        <h4>Gerelateerde categorieën</h4>
-        <ul>
-            <li><a href="#">Afvallen</a></li>
-            <li><a href="#">Eiwitten en Proteïne</a></li>
-            <li><a href="#">Voeding & Sportdrank</a></li>
-            <li><a href="#">Light producten</a></li>
-            <li><a href="#">Lactosevrije Eiwitten</a></li>
-            <li><a href="#">Sportdranken</a></li>
-        </ul>
-    </section>
-    <p>kijk het filmpje van Kevin Powell over details op youtube voor dit dropdown menu</p>
-    <p>kijk het filmpje van Kevin Powell over details op youtube voor dit dropdown menu</p>
-    <p>kijk het filmpje van Kevin Powell over details op youtube voor dit dropdown menu</p>
 
         <h2>Andere bekeken ook</h2>
         <ul>
@@ -163,12 +151,124 @@
                     </article>
                 </a>
             </li>
-            
+            <li class="product"> <!--class toegevoegd om preciezer aan te spreken in css en gedaan in Engels om niet te verwarren van de content-->
+                <img src="./images/content/product_van_de_week.webp" alt="actie_etc...">
+                <button><img src="./images/content/cart.png" alt="winkelwagen_knop"></button>
+                <a href="#">
+                    <article>
+                        <ul>
+                            <li>
+                                <img src="./images/content/ster.png" alt="volle_ster">
+                                <img src="./images/content/ster.png" alt="volle_ster">
+                                <img src="./images/content/ster.png" alt="volle_ster">
+                                <img src="./images/content/ster.png" alt="volle_ster">
+                                <img src="./images/content/ster_half.png" alt="halve_ster">
+                                <p>4.8 (496)</p>
+                            </li>
+                            <li>
+                                <h4>Beer With Benefits</h4>
+                            </li>
+                            <li>
+                                <img src="./images/content/check.png" alt="check_icoon">
+                                <p>Heerlijk frisse 0.5 IPA</p>
+                            </li>
+                            <li>
+                                <img src="./images/content/check.png" alt="check_icoon">
+                                <p>5g eiwit en vitamines</p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="from">Vanaf</span>
+                                    <span class="old">14,</span>
+                                    <span class="old_small">99</span>
+                                    <span class="new">14,</span>
+                                    <span class="new_small">99</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </article>
+                </a>
+            </li>
+            <li class="product"> <!--class toegevoegd om preciezer aan te spreken in css en gedaan in Engels om niet te verwarren van de content-->
+                <img src="./images/content/product_van_de_week.webp" alt="actie_etc...">
+                <button><img src="./images/content/cart.png" alt="winkelwagen_knop"></button>
+                <a href="#">
+                    <article>
+                        <ul>
+                            <li>
+                                <img src="./images/content/ster.png" alt="volle_ster">
+                                <img src="./images/content/ster.png" alt="volle_ster">
+                                <img src="./images/content/ster.png" alt="volle_ster">
+                                <img src="./images/content/ster.png" alt="volle_ster">
+                                <img src="./images/content/ster_half.png" alt="halve_ster">
+                                <p>4.8 (496)</p>
+                            </li>
+                            <li>
+                                <h4>Beer With Benefits</h4>
+                            </li>
+                            <li>
+                                <img src="./images/content/check.png" alt="check_icoon">
+                                <p>Heerlijk frisse 0.5 IPA</p>
+                            </li>
+                            <li>
+                                <img src="./images/content/check.png" alt="check_icoon">
+                                <p>5g eiwit en vitamines</p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="from">Vanaf</span>
+                                    <span class="old">14,</span>
+                                    <span class="old_small">99</span>
+                                    <span class="new">14,</span>
+                                    <span class="new_small">99</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </article>
+                </a>
+            </li>
+            <li class="product"> <!--class toegevoegd om preciezer aan te spreken in css en gedaan in Engels om niet te verwarren van de content-->
+                <img src="./images/content/product_van_de_week.webp" alt="actie_etc...">
+                <button><img src="./images/content/cart.png" alt="winkelwagen_knop"></button>
+                <a href="#">
+                    <article>
+                        <ul>
+                            <li>
+                                <img src="./images/content/ster.png" alt="volle_ster">
+                                <img src="./images/content/ster.png" alt="volle_ster">
+                                <img src="./images/content/ster.png" alt="volle_ster">
+                                <img src="./images/content/ster.png" alt="volle_ster">
+                                <img src="./images/content/ster_half.png" alt="halve_ster">
+                                <p>4.8 (496)</p>
+                            </li>
+                            <li>
+                                <h4>Beer With Benefits</h4>
+                            </li>
+                            <li>
+                                <img src="./images/content/check.png" alt="check_icoon">
+                                <p>Heerlijk frisse 0.5 IPA</p>
+                            </li>
+                            <li>
+                                <img src="./images/content/check.png" alt="check_icoon">
+                                <p>5g eiwit en vitamines</p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="from">Vanaf</span>
+                                    <span class="old">14,</span>
+                                    <span class="old_small">99</span>
+                                    <span class="new">14,</span>
+                                    <span class="new_small">99</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </article>
+                </a>
+            </li>
         </ul>
                     
 
-   
-   <!--dit is hetzelfde als de weekaanbieding, copy paste als die eerst klaar is. ook x4 btw-->
+
     <section>
         <h2>Kunnen we je ergens mee helpen?</h2>
         <p>We zijn elke werkdag bereikbaar tussen <span class="bolder">08:00</span> en <span class="bolder">22:00</span> en op zaterdag en zondag tussen <span class="bolder">12:00</span> en <span class="bolder">16:00</span>.</p>
@@ -207,8 +307,8 @@
     </section>
     <ul>
         <li>
-            <details>
-                <summary>Klantenservice <img src="./images/content/pijl_omlaag.svg" alt="pijl_omlaag"></summary>
+            <details name="eenvooreen">
+                <summary>Klantenservice <img src="./images/content/angle_down.png" alt="pijl_omlaag"></summary>
                 <ul>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Contact</a></li>
@@ -219,8 +319,8 @@
             </details>
         </li>
         <li>
-            <details>
-                <summary>Handige links <img src="./images/content/pijl_omlaag.svg" alt="pijl_omlaag"></summary>
+            <details name="eenvooreen">
+                <summary>Handige links <img src="./images/content/angle_down.png" alt="pijl_omlaag"></summary>
                 <ul>
                     <li><a href="#">Loyaliteitssysteem</a></li>
                     <li><a href="#">Caloriebehoefte berekenen</a></li>
@@ -238,8 +338,8 @@
             </details>
         </li>
         <li>
-            <details>
-            <summary>Zakelijk <img src="./images/content/pijl_omlaag.svg" alt="pijl_omlaag"></summary>
+            <details name="eenvooreen">
+            <summary>Zakelijk <img src="./images/content/angle_down.png" alt="pijl_omlaag"></summary>
             <ul>
                 <li><a href="#">Zakelijke voorwaarden</a></li>
                 <li><a href="#">Zakelijk account aanvragen</a></li>

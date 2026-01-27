@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Tom Heine
 
   #### Je startniveau:
-  Blauw/Rood
+  Blauw
 
   #### Je focus:
   surface plane
@@ -119,10 +119,10 @@ https://xxlnutrition.com/nl
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - html van beide paginas eerst mee beginnen, dan alle css
+  - 3 css style pagina’s 1 general met aspecten die beide paginas hebben en dan 1 per pagina
+  - sections en articles hebben ALTIJD een header nodig (h1, h2 etc)
+  - als je begint met css, kleuren en stijl eerst en dan positie
 
 </details>
 
@@ -152,9 +152,12 @@ https://xxlnutrition.com/nl
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - nav geen sections, maar ul in ul
+  - voor cards article gebruiken
+  - sections andere kleur geven in de schets
+  - keuze maken bij / gevallen in de schets
+  - zet op github
+  - bekijk kevin powell video over details op yt
 - ...
 
 </details>
@@ -170,7 +173,7 @@ https://xxlnutrition.com/nl
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+      De screenreader slaat geen belangrijke aspecten van de site over nu de headers beter geregelt zijn, zoals prijs en smaak kiezen.
 </details>
 
 
@@ -216,18 +219,24 @@ https://xxlnutrition.com/nl
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="readme-images/laatste_oplevering/1.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/laatste_oplevering/2.png" width="375px" alt="uitomst opdracht 2">
+  <img src="readme-images/laatste_oplevering/3.png" width="375px" alt="uitomst opdracht 3">
+  <img src="readme-images/laatste_oplevering/4.png" width="375px" alt="uitomst opdracht 4">
+  <img src="readme-images/laatste_oplevering/5.png" width="375px" alt="uitomst opdracht 5">
+  <img src="readme-images/laatste_oplevering/6.png" width="375px" alt="uitomst opdracht 6">
+  <img src="readme-images/laatste_oplevering/7.png" width="375px" alt="uitomst opdracht 7">
+  <img src="readme-images/laatste_oplevering/8.png" width="375px" alt="uitomst opdracht 8">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
+  Korte omschrijving met plaatjes:
+    Het opbouwen van de html en daarbij in css alles juist aanspreken met de juiste selectoren. Heb erg weinig divjes, classes of id's gebruikt. Alleen waar echt nodig was. Ook in de footer waar ik details heb gebruikt werkt best goed, heb het niet precies kunnen stijlen en animeren op de manier van kevin powell maar ben alsnog tevreden.
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
-
+  Javascript en details had ik veel moeite mee. Met de details waren er veel elementen die werkte in VSC en bepaalde delen kon je niet aanroepen met css zoals de ::marker en dus niet animeren. Met de javascript heb ik niet kunnen laten werken, snap niet waarom het niet werkt, wat lijd dat de carousel wat anders is en het hamburger menu niet werkt.
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
@@ -244,8 +253,8 @@ https://xxlnutrition.com/nl
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
+  1. chatgpt https://chatgpt.com/g/g-p-691212248ddc8191ad585692814f432a-fed/project
+  2. DLO
   3. ...
 
 </details>
